@@ -13,7 +13,7 @@ const HeroSection = () => {
           </p>
           <Link
             to={"/country"}
-            className="flex items-center gap-2 border-1 border-white w-40 p-2 rounded-xl bg-[#1f1f1f] hover:bg-[#303030] relative"
+            className="flex items-center gap-2 border-1 border-white w-40 p-2 rounded-xl bg-radial-[at_25%_25%] from-zinc-700 to-zinc-900 to-75% hover:bg-[#303030] relative"
           >
             Start Exploring{" "}
             <FaLongArrowAltRight className=" text-xl absolute right-5 top-3" />

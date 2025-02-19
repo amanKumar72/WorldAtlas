@@ -28,7 +28,7 @@ const footerIcon = {
 };
 const Footer = () => {
   return (
-    <footer className="footer-section  bg-[#292929]">
+    <footer className="footer-section mt-10">
       <div className="flex  justify-evenly ">
         {footerContact.map((curData, index) => {
           const { icon, title, details } = curData;
