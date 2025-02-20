@@ -22,13 +22,13 @@ const footerContact = [
   },
 ];
 const footerIcon = {
-  MdPlace: <MdPlace className="text-blue-700 text-2xl mr-3" />,
-  IoCallSharp: <IoCallSharp className="text-blue-700 text-2xl mr-3" />,
-  TbMailPlus: <TbMailPlus className="text-blue-700 text-2xl mr-3" />,
+  MdPlace: <MdPlace className="text-blue-700 text-2xl mr-3 lg:text-4xl" />,
+  IoCallSharp: <IoCallSharp className="text-blue-700 text-2xl mr-3 lg:text-4xl" />,
+  TbMailPlus: <TbMailPlus className="text-blue-700 text-2xl mr-3 lg:text-4xl" />,
 };
 const Footer = () => {
   return (
-    <footer className="footer-section mt-10">
+    <footer className="footer-section mt-10 lg:text-xl">
       <div className="flex flex-col md:flex-row justify-between gap-2 md:gap-0">
         {footerContact.map((curData, index) => {
           const { icon, title, details } = curData;

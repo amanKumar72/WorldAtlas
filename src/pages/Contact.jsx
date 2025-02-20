@@ -16,7 +16,7 @@ const Contact = () => {
         <input type="email" id="email" name="name" placeholder="abc@example.com"   className="bg-gray-100 border-none text-xl md:text-3xl px-4 py-2 rounded-2xl text-gray-900 "  />
         <label htmlFor="message" className=" text-xl md:text-3xl " >Enter your message </label>
         <textarea name="message" id="message" placeholder="I want to meet you...."   rows={5} className="bg-gray-100 border-none text-xl md:text-3xl px-4 py-2 rounded-2xl text-gray-900 "  ></textarea>
-        <button type='submit' className='bg-black text-xl md:text-3xl font-semibold my-2 px-4 py-2 rounded-2xl '>Submit</button>
+        <button type='submit' className='bg-zinc-700 hover:bg-zinc-600 cursor-pointer text-xl md:text-3xl font-semibold my-2 px-4 py-2 rounded-2xl '>Submit</button>
       </form>
     </div>
   )
