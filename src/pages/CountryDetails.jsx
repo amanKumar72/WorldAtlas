@@ -1,5 +1,5 @@
 import { useEffect, useTransition, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { getCountryIndData } from "../components/Axios";
 import Loader from "../components/Loader";
 
@@ -28,7 +28,7 @@ const CountryDetails = () => {
   return (
     <>
       {country ? (
-        <div className="w-full md:p-15 p-2 ">
+        <div className="w-full md:p-15 p-2 flex flex-col gap-5 lg:gap-7 ">
           <div className="container flex flex-col md:flex-row  gap-2 md:gap-4 px-4 md:px-10 py-2 md:py-5 lg:py-16 bg-radial-[at_25%_25%] from-zinc-700 to-zinc-900 to-75% shadow-xl shadow-zinc-700 rounded-xl">
             <div className="img flex justify-center items-center md:w-[40%] ">
               <img
@@ -70,7 +70,7 @@ const CountryDetails = () => {
               </h3>
               <h3 className="text-md md:text-lg lg:text-2xl">
                 <span className="text-gray-300 ">Top level domain : </span>
-                {country.tld}
+                {country.tld[0]}
               </h3>
               <h3 className="text-md md:text-lg lg:text-2xl">
                 <span className="text-gray-300 ">Currencies : </span>{" "}
@@ -89,6 +89,7 @@ const CountryDetails = () => {
               </h3>
             </div>
           </div>
+          <Link to={'/country'} className="px-5 lg:px-8 py-2 md:py-3 lg:text-2xl w-30 lg:w-50 self-end cursor-pointer bg-radial-[at_25%_25%] from-zinc-400 to-gray-500 to-75% shadow-md shadow-gray-400 rounded-xl">Go Back </Link>
         </div>
       ) : null}
       

@@ -2,7 +2,6 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const CountryCard = ({country}) => {
-  console.log(country);
   
   return (
     <div className="flex flex-col gap-2 md:gap-3 w-60 md:w-70 p-2 md:p-4 rounded-xl shadow-lg  shadow-[#8c8b8b]   bg-radial-[at_25%_25%] from-zinc-700 to-zinc-900 to-75%   " >
