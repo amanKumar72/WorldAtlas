@@ -13,81 +13,47 @@ const footerContact = [
   {
     icon: "IoCallSharp",
     title: "Call us",
-    details: "9876543211",
+    details: "1234567890",
   },
   {
     icon: "TbMailPlus",
     title: "Mail us",
-    details: "contact@kodyfier.com",
+    details: "amanKumar@gamil.com",
   },
 ];
 const footerIcon = {
-  MdPlace: <MdPlace />,
-  IoCallSharp: <IoCallSharp />,
-  TbMailPlus: <TbMailPlus />,
+  MdPlace: <MdPlace className="text-blue-700 text-2xl mr-3" />,
+  IoCallSharp: <IoCallSharp className="text-blue-700 text-2xl mr-3" />,
+  TbMailPlus: <TbMailPlus className="text-blue-700 text-2xl mr-3" />,
 };
 const Footer = () => {
   return (
     <footer className="footer-section mt-10">
-      <div className="flex  justify-evenly ">
+      <div className="flex flex-col md:flex-row justify-between gap-2 md:gap-0">
         {footerContact.map((curData, index) => {
           const { icon, title, details } = curData;
           return (
-            <div className="footer-contact flex items-center " key={index}>
+            <div
+              className="footer-contact flex items-center mx-auto "
+              key={index}
+            >
               <div className="icon">{footerIcon[icon]}</div>
-              <div className="footer-contact-text">
-                <p>{title}</p>
+              <div className="flex md:flex-col items-center">
+                <p className="text-gray-400">{title} &nbsp;</p>
                 <p>{details}</p>
               </div>
             </div>
           );
         })}
       </div>
-
-      <div className="copyright-area">
-        <div className="container">
-          <div className="grid grid-two-cols">
-            <div className="copyright-text">
-              <p>
-                Copyright &copy; 2024, All Right Reserved
-                <NavLink to="https://thapatechnical.shop/" target="_blank">
-                  ThapaTechnical
-                </NavLink>
-              </p>
-            </div>
-
-            <div className="footer-menu">
-              <ul>
-                <li>
-                  <NavLink to="/">Home</NavLink>
-                </li>
-
-                <li>
-                  <NavLink
-                    to="https://www.instagram.com/thapatechnical/"
-                    target="_blank"
-                  >
-                    Social
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink
-                    to="https://thapatechnical.shop/source-code"
-                    target="_blank"
-                  >
-                    Source Code
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="/contact">Contact</NavLink>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+      <p className="text-center my-6">
+        Copyright &copy; 2024, All Right Reserved &nbsp;
+        <NavLink to="/" target="_blank" className="text-blue-600">
+          AmanKumar
+        </NavLink>
+      </p>
     </footer>
   );
 };
 
-export default Footer
+export default Footer;

@@ -69,7 +69,7 @@ const facts = [
 const CountryCards = () => {
   return (
     <div>
-      <div className="flex flex-wrap gap-5  ">
+      <div className="flex flex-wrap gap-5 justify-center  ">
         {facts.map((fact, i) => (
           <AboutCountryCard key={i} fact={fact} />
         ))}

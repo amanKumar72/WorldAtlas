@@ -6,7 +6,7 @@ const AppLayout = () => {
     <div className="w-full h-full px-2 py-2 md:px-6 md:py-3 bg-black text-white">
       <Header/>
       <Outlet/>
-      {/* <Footer/> */}
+      <Footer/>
     </div>
   )
 }
