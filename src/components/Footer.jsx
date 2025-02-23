@@ -28,7 +28,7 @@ const footerIcon = {
 };
 const Footer = () => {
   return (
-    <footer className="footer-section mt-10 lg:text-xl">
+    <footer className="footer-section bottom-0 mt-10 lg:text-xl">
       <div className="flex flex-col md:flex-row justify-between gap-2 md:gap-0">
         {footerContact.map((curData, index) => {
           const { icon, title, details } = curData;

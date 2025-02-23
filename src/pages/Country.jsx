@@ -48,7 +48,7 @@ const Country = () => {
         countries={countries}
         setCountries={setCountries}
       />
-      <div className="countries flex flex-wrap gap-5 md:gap-7 justify-center">
+      <div className="countries  min-h-[500px]  flex flex-wrap gap-5 md:gap-7 justify-center">
         {filteredCountries ? (
           filteredCountries.length == 0 && (filter || search) ? (
             <div className="text-center py-10">

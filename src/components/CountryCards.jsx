@@ -3,11 +3,11 @@ import AboutCountryCard from "../components/AboutCountryCard";
 const facts = [
   {
     id: 1,
-    countryName: "World",
-    capital: "No Capital",
-    population: "Null",
+    countryName: "Saudi Arabia",
+    capital: "Riyadh",
+    population: 35340680,
     interestingFact:
-      "There are 195 countries in the world today, including 193 United Nations member states and 2 observer states.",
+      "Saudi Arabia is home to the largest sand desert in the world, the Rub' al Khali or 'Empty Quarter'.",
   },
   {
     id: 2,
@@ -65,6 +65,79 @@ const facts = [
     interestingFact:
       "The Great Wall of China is visible from space on rare occasions.",
   },
+  {
+    id: 9,
+    countryName: "Canada",
+    capital: "Ottawa",
+    population: 38005238,
+    interestingFact:
+      "Canada has the longest coastline in the world, stretching over 202,080 kilometers.",
+  },
+  {
+    id: 10,
+    countryName: "Japan",
+    capital: "Tokyo",
+    population: 125836021,
+    interestingFact:
+      "Japan is home to the Shinkansen, also known as the bullet train, which can reach speeds of up to 320 km/h.",
+  },
+  {
+    id: 11,
+    countryName: "Germany",
+    capital: "Berlin",
+    population: 83166711,
+    interestingFact:
+      "Germany is known for its Autobahn highway system, which has sections with no speed limit.",
+  },
+  {
+    id: 12,
+    countryName: "India",
+    capital: "New Delhi",
+    population: 1417173173,
+    interestingFact:
+      "India is the birthplace of chess, with the earliest form of the game dating back to the 6th century.",
+  },
+  // {
+  //   id: 13,
+  //   countryName: "South Africa",
+  //   capital:
+  //     "Pretoria (administrative), Cape Town (legislative), Bloemfontein (judicial)",
+  //   population: 59308690,
+  //   interestingFact:
+  //     "South Africa has three capital cities, each serving a different function of the government.",
+  // },
+  // {
+  //   id: 14,
+  //   countryName: "Mexico",
+  //   capital: "Mexico City",
+  //   population: 126190788,
+  //   interestingFact:
+  //     "Mexico City was built on the site of the ancient Aztec capital, Tenochtitlán.",
+  // },
+  // {
+  //   id: 15,
+  //   countryName: "United Kingdom",
+  //   capital: "London",
+  //   population: 67215293,
+  //   interestingFact:
+  //     "Big Ben is not the name of the tower, but rather the nickname for the Great Bell inside it.",
+  // },
+  // {
+  //   id: 16,
+  //   countryName: "Italy",
+  //   capital: "Rome",
+  //   population: 60244639,
+  //   interestingFact:
+  //     "Rome is home to the Vatican City, the smallest independent state in the world.",
+  // },
+  // {
+  //   id: 17,
+  //   countryName: "Argentina",
+  //   capital: "Buenos Aires",
+  //   population: 45604590,
+  //   interestingFact:
+  //     "Argentina is known for its tango music and dance, which originated in Buenos Aires in the late 19th century.",
+  // },
 ];
 const CountryCards = () => {
   return (
@@ -75,7 +148,7 @@ const CountryCards = () => {
         ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default CountryCards
+export default CountryCards;

@@ -4,7 +4,7 @@ import { FaExclamationTriangle } from "react-icons/fa";
 
 const ErrorPage = () => {
   const error = useRouteError();
-  console.log(error.message.toLocaleString());
+  console.log(error.data);
   return (
     <div className="flex flex-col items-center justify-center h-screen bg-[#1c1c1c] text-white text-center p-4">
       <FaExclamationTriangle className="text-red-500 text-6xl mb-4" />
@@ -12,7 +12,7 @@ const ErrorPage = () => {
         Oops! Some Error Occured
       </h1>
       <p className="text-gray-300 mb-6">
-        Error : { error&& error.message.toLocaleString()}
+        { error&& error.data}
       </p>
       <Link
         to="/"

@@ -20,8 +20,11 @@ const FilterCountry = ({search,setSearch,filter,setFilter,countries,setCountries
           placeholder="search"
           className="px-2 py-1 text-xl bg-zinc-700 rounded-2xl"
         />
+        <div className="butons flex gap-5 justify-center">
+
         <button onClick={()=>handleSort('asc')} className="px-5 lg:px-8 py-2 md:py-3 lg:text-2xl w-30 lg:w-50 self-end cursor-pointer bg-gray-800 hover:bg-gray-600 shadow-md shadow-gray-400 rounded-xl" >Asc.</button>
         <button onClick={()=>handleSort('desc')} className="px-5 lg:px-8 py-2 md:py-3 lg:text-2xl w-30 lg:w-50 self-end cursor-pointer bg-gray-800  hover:bg-gray-600 shadow-md shadow-gray-400 rounded-xl">Desc.</button>
+        </div>
         <select
           name="regions"
           value={filter}

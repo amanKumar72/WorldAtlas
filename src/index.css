@@ -12,3 +12,7 @@
 .animate-spin3d {
   animation: spin3d 2s infinite linear;
 }
+
+html, body {
+  background-color: black;
+}
