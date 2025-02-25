@@ -1,12 +1,11 @@
 import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
-
-  const [isActive, setIsActive] = useState("home");
+  const location = useLocation();
 
   return (
     <nav className="p-4 w-full shadow-md shadow-zinc-500 border-b mb-3 border-zinc-600 ">
@@ -30,10 +29,10 @@ const Header = () => {
         >
           <div
             className={`p-4 md:px- md:py-1 border-b border-white md:border-none ${
-              isActive == "home" && "text-blue-500"
+              (location.pathname == "/" || location.pathname == "/home") &&
+              "text-blue-500"
             } hover:bg-zinc-700 rounded`}
             onClick={() => {
-              setIsActive("home");
               setIsOpen(false);
               navigate("/");
             }}
@@ -42,10 +41,9 @@ const Header = () => {
           </div>
           <div
             className={`p-4 md:px- md:py-1 border-b border-white md:border-none ${
-              isActive == "about" && "text-blue-500"
+              location.pathname == "/about" && "text-blue-500"
             } hover:bg-zinc-700 rounded`}
             onClick={() => {
-              setIsActive("about");
               setIsOpen(false);
               navigate("/about");
             }}
@@ -54,10 +52,9 @@ const Header = () => {
           </div>
           <div
             className={`p-4 md:px- md:py-1 border-b border-white md:border-none ${
-              isActive == "country" && "text-blue-500"
+              location.pathname == "/country" && "text-blue-500"
             } hover:bg-zinc-700 rounded`}
             onClick={() => {
-              setIsActive("country");
               setIsOpen(false);
               navigate("/country");
             }}
@@ -66,10 +63,9 @@ const Header = () => {
           </div>
           <div
             className={`p-4 md:px- md:py-1 border-b border-white md:border-none ${
-              isActive == "contact" && "text-blue-500"
+              location.pathname == "/contact" && "text-blue-500"
             } hover:bg-zinc-700 rounded`}
             onClick={() => {
-              setIsActive("contact");
               setIsOpen(false);
               navigate("/contact");
             }}
